@@ -106,3 +106,65 @@ footer {
     visibility: hidden;
   }
 }
+
+/* Form container met flex om alles op 1 lijn te zetten */
+.form-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.5px;
+}
+
+#user-instructions,
+#languageSelect {
+  border: 1.5px solid #c97b58;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #2f2241;
+  outline: none;
+  background-color: white;
+  cursor: text;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#user-instructions {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+#languageSelect {
+  width: 130px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg%20width%3d%2210%22%20height%3d%227%22%20viewBox%3d%220%200%2010%207%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%3cpath%20d%3d%22M0%200l5%207%205-7z%22%20fill%3d%22%236c4a4d%22/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 10px 7px;
+  padding-right: 40px; /* ruimte voor pijltje */
+}
+
+#user-instructions:hover,
+#languageSelect:hover,
+#user-instructions:focus,
+#languageSelect:focus {
+  border-color: #b2644a;
+}
+
+.submit-button {
+  background-color: #c97b58;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #b2644a;
+}

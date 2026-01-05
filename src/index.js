@@ -15,7 +15,7 @@ function generateRecipe(event) {
   let apiKey = "8ob48e0d163fa039b10t18b602a5fad5";
 
   let context =
-    "You are a cooking expert and love to share amazing recipes. Your mission is to generate a recipe and separate each line with a <br /> . Make sure to follow the user instructions. Do not include a title to the recipe. Sign the recipe with 'SheCodes AI' inside a <strong> element at the end of the recipe and NOT at the beginning";
+    "You are a cooking expert and love to share amazing recipes with people who share one or more ingredients with you. Your mission is to generate a recipe and separate each line with a <br /> . Make sure to follow the user instructions and provide your answer in the same language as the entered ingredients. For example, if someone writes hamsi, this is Turkish and then give the recipe in Turkish. Do not include a title to the recipe. ";
   let prompt = `User instructions: Generate a recipe about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
